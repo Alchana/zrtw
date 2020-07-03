@@ -1,0 +1,47 @@
+{
+  "name": "zrtw",
+  "title": "The Legend of Zelda: Reclaim the Wild",
+  "description": "An implementation of The Legend of Zelda: Reclaim the Wild for Foundry VTT.",
+  "version": "0.0.1",
+  "templateVersion": 2,
+  "author": "Alchana",
+  "scripts": [],
+  "esmodules": [],
+  "styles": [
+    "styles/botw.css",
+  ],
+  "packs": [
+    {
+      "name": "monsters",
+      "label": "Monsters",
+      "system": "zrtw",
+      "module": "zrtw",
+      "path": "packs/monsters.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "system": "zrtw",
+      "module": "zrtw",
+      "path": "packs/items.db",
+      "entity": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "initiative": "2d6 + @traits.courage.agility.value",
+  "gridDistance": 1,
+  "gridUnits": "squares",
+  "primaryTokenAttribute": "attributes.hp",
+  "secondaryTokenAttribute": "attributes.sp",
+  "url": "https://your/hosted/system/repo/",
+  "manifest": "https://your/hosted/system/repo/system.json",
+  "download": "https://your/packaged/download/archive.zip"
+}
