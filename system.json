@@ -1,47 +1,22 @@
 {
   "name": "zrtw",
-  "title": "The Legend of Zelda: Reclaim the Wild",
+  "title": "Reclaim the Wild",
   "description": "An implementation of The Legend of Zelda: Reclaim the Wild for Foundry VTT.",
-  "version": "0.0.1",
+  "version": 0.0.1,
+  "minimumCoreVersion": "0.5.2",
+  "compatibleCoreVersion": "0.5.5",
   "templateVersion": 2,
   "author": "Alchana",
-  "scripts": [],
-  "esmodules": [],
-  "styles": [
-    "styles/botw.css",
-  ],
-  "packs": [
-    {
-      "name": "monsters",
-      "label": "Monsters",
-      "system": "zrtw",
-      "module": "zrtw",
-      "path": "packs/monsters.db",
-      "entity": "Actor"
-    },
-    {
-      "name": "items",
-      "label": "Items",
-      "system": "zrtw",
-      "module": "zrtw",
-      "path": "packs/items.db",
-      "entity": "Item"
-    }
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "socket": false,
-  "initiative": "2d6 + @traits.courage.agility.value",
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
+  "languages": [],
   "gridDistance": 1,
   "gridUnits": "squares",
-  "primaryTokenAttribute": "attributes.hp",
-  "secondaryTokenAttribute": "attributes.sp",
-  "url": "https://your/hosted/system/repo/",
-  "manifest": "https://your/hosted/system/repo/system.json",
-  "download": "https://your/packaged/download/archive.zip"
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "https://gitlab.com/foundrynet/worldbuilding/",
+  "manifest": "https://gitlab.com/foundrynet/worldbuilding/raw/master/system.json",
+  "download": "https://gitlab.com/foundrynet/worldbuilding/-/archive/release-035/worldbuilding-release-035.zip",
+  "license": "LICENSE.txt"
 }
