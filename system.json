@@ -2,7 +2,7 @@
   "name": "zrtw",
   "title": "Reclaim the Wild",
   "description": "An implementation of The Legend of Zelda: Reclaim the Wild for Foundry VTT.",
-  "version": 0.1,
+  "version": "0.1",
   "minimumCoreVersion": "0.5.2",
   "compatibleCoreVersion": "0.5.5",
   "templateVersion": 2,
