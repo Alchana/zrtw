@@ -1,235 +1,28 @@
 {
 "Actor": {
-	"types": ["hero", "npc", "monster"],
-	"templates": {
-		"common": {
-			"traits": {
-				"power":{
-					"athletics": {
-						"value": 1,
-						"bonus": 0
-					},
-					"civilization": {
-						"value": 1,
-						"bonus": 0
-					},
-					"combat": {
-						"value": 1,
-						"bonus": 0
-					},
-					"fortitude": {
-						"value": 1,
-						"bonus": 0
-					},
-					"hearts": {
-						"value": 1,
-						"bonus": 0
-					},
-					"intimidate": {
-						"value": 1,
-						"bonus": 0
-					},
-					"mechanics": {
-						"value": 1,
-						"bonus": 0
-					},
-					"smithing": {
-						"value": 1,
-						"bonus": 0
-					}
-				},
-				"wisdom":{
-					"arcana": {
-						"value": 1,
-						"bonus": 0
-					},
-					"discipline": {
-						"value": 1,
-						"bonus": 0
-					},
-					"enchanting": {
-						"value": 1,
-						"bonus": 0
-					},
-					"influence": {
-						"value": 1,
-						"bonus": 0
-					},
-					"magic": {
-						"value": 1,
-						"bonus": 0
-					},
-					"perception": {
-						"value": 1,
-						"bonus": 0
-					},
-					"perform": {
-						"value": 1,
-						"bonus": 0
-					},
-					"willpower": {
-						"value": 1,
-						"bonus": 0
-					}
-				},
-				"courage":{
-					"accuracy": {
-						"value": 1,
-						"bonus": 0
-					},
-					"agility": {
-						"value": 1,
-						"bonus": 0
-					},
-					"command": {
-						"value": 1,
-						"bonus": 0
-					},
-					"cooking": {
-						"value": 1,
-						"bonus": 0
-					},
-					"guile": {
-						"value": 1,
-						"bonus": 0
-					},
-					"insight": {
-						"value": 1,
-						"bonus": 0
-					},
-					"nature": {
-						"value": 1,
-						"bonus": 0
-					},
-					"stamina": {
-						"value": 1
-						"bonus": 0
-					}
-				}
-			},
-			"attributes": {
-				"hp": {
-					"value:" 4,
-					"min": 0,
-					"max": 4,
-					"temp:" 0,
-					"tempmax:" 4,
-					"bound:" 0,
-					"burned:" 0
-				},
-				"sp": {
-					"value:" 4,
-					"min": 0,
-					"max": 4,
-					"temp:" 0,
-					"tempmax:" 4,
-					"bound:" 0,
-					"burned:" 0
-				},
-				"mp": {
-					"value:" 4,
-					"min": 0,
-					"max": 4,
-					"temp:" 0,
-					"tempmax:" 4,
-					"bound:" 0,
-					"burned:" 0
-				},
-				"concentration": {
-					"value": 11,
-					"bonus": 0
-				},
-				"evasion": {
-					"value": 11,
-					"bonus": 0
-				},
-				"vitality": {
-					"value": 11,
-					"bonus": 0
-				},
-				"defense": {
-					"value": 0,
-					"bonus": 0
-				},
-				"speed": {
-					"value": 6,
-					"bonus": 0
-				},
-				"weaknesses": "",
-				"immunities": "",
-				"resistances": {
-					"blunt": 0,
-					"sharp": 0,
-					"piercing": 0,
-					"light": 0,
-					"darkness": 0,
-					"fire": 0,
-					"water": 0,
-					"ice": 0,
-					"shock": 0,
-					"earth": 0
-				},
-				"status effects": "",
-				"size": ""
-			},
-		},
-		"details": {
-			"race": "",
-			"age": "",
-			"height": "",
-			"weight": "",
-			"biography": {
-				"value": "",
-				"public": ""
-			}
-		}
-	},
-	"hero": {
-		"templates": ["common", "details"]
-	},
-	"npc": {
-		"templates": ["common", "details"]
-	},
-	"monster": {
-		"templates": ["commmon"]
-	}
+  "types": ["character"],
+  "character": {
+    "biography": "",
+    "health": {
+      "value": 10,
+      "min": 0,
+      "max": 10
+    },
+    "power": {
+      "value": 5,
+      "min": 0,
+      "max": 5
+    },
+    "attributes": {}
+  }
 },
 "Item": {
-	"types": ["weapon", "armor", "tool", "consumable", "ammo", "technique", "spell", "feat", "song", "item"],
-	"templates": {
-		"rank": {
-		  "value": 0
-		}
-	},
-	"weapon": {
-		"templates": ["rank"]
-	},
-	"armor": {
-		"templates": ["rank"]
-	},
-	"tool": {
-		"templates": ["rank"]
-	},
-	"consumable": {
-		"templates": ["rank"]
-	},
-	"ammo": {
-		"templates": []
-	},
-	"technique": {
-		"templates": []
-	},
-	"spell": {
-		"templates": []
-	}
-	"feat": {
-		"templates": []
-	},
-	"song": {
-		"templates": []
-	}
-	"item": {
-		"templates": []
-	}
+  "types": ["item"],
+  "item": {
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "attributes": {}
+  }
 }
 }
